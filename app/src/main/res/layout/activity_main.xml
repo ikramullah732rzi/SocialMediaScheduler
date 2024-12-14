@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".presentation.MainActivity">
+    tools:context=".presentation.AddUpdateActivity">
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/addImageButton"
@@ -36,12 +36,26 @@
 
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/timeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:timePickerMode="spinner"
+        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+        android:text="Pick Time"
+        app:layout_constraintBottom_toTopOf="@+id/saveButton"
+        app:layout_constraintEnd_toEndOf="@+id/edit_Description"
+        app:layout_constraintStart_toStartOf="@+id/edit_Description"
+        app:layout_constraintTop_toBottomOf="@+id/edit_Description"
+        app:layout_constraintVertical_bias="0.589" />
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/saveButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="204dp"
         android:text="Save Post"
         app:layout_constraintEnd_toEndOf="@+id/edit_Description"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/edit_Description"
         app:layout_constraintTop_toBottomOf="@+id/edit_Description" />
 </androidx.constraintlayout.widget.ConstraintLayout>

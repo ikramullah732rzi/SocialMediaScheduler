@@ -63,6 +63,10 @@ dependencies {
     androidTestImplementation("androidx.room:room-testing:$room_version")
 
     implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+
+    // Kotlin + coroutines
+    implementation("androidx.work:work-runtime-ktx:2.10.0")
 
 
 }
